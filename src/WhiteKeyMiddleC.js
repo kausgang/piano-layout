@@ -2,8 +2,12 @@ import React from "react";
 
 const WhiteKeyMiddleC = (props) => {
   return (
-    <div data-key="KEYCODE" className="key" data-note="A0">
-      <span className="hints">C</span>
+    <div id={props.datanote} className="key middleC" datanote={props.datanote}>
+      {/* <span className="hints">C</span> */}
+      <audio
+        data-key={props.datanote}
+        src={"MP3/" + props.datanote + ".mp3"}
+      ></audio>
     </div>
   );
 };

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <style rel="stylesheet" type="text/css" href="style.css"></style> -->
+    <script
+      src="https://unpkg.com/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,4 +44,12 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+    document.onclick = (e) => {
+      const audio = e.target.children[0];
+      audio.currentTime = 0;
+      audio.play();
+    };
+  </script>
 </html>

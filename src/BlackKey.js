@@ -2,8 +2,11 @@ import React from "react";
 
 const BlackKey = (props) => {
   return (
-    <div data-key="KEYCODE" className="key sharp" data-note="A0">
-      {/* <span className="hints">B</span> */}
+    <div id={props.datanote} className="key sharp" datanote={props.datanote}>
+      <audio
+        data-key={props.datanote}
+        src={"MP3/" + props.datanote + ".mp3"}
+      ></audio>
     </div>
   );
 };

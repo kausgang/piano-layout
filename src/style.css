@@ -16,24 +16,37 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   /* width: 2%; */
-
+  background-color: white;
   width: 14.28%;
   height: 50vh;
   z-index: 0;
-  margin-left: -0.1%;
-  margin-right: -0.1%;
+  margin-left: -0.2%;
+  margin-right: -0.2%;
 }
 
 .key.sharp {
   position: relative;
   /* width: 1.6%; */
-  width: 11.42%;
+  width: 11.43%;
   height: 30vh;
   background: #000;
   color: #eee;
   z-index: 10;
   margin-left: -5.71%;
   margin-right: -5.71%;
+}
+
+.key.middleC {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  /* width: 2%; */
+  background-color: lightgray;
+  width: 14.28%;
+  height: 50vh;
+  z-index: 0;
+  margin-left: -0.1%;
+  margin-right: -0.1%;
 }
 
 .hints {

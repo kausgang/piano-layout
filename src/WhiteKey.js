@@ -2,8 +2,8 @@ import React from "react";
 
 const WhiteKey = (props) => {
   return (
-    <div data-key="KEYCODE" className="key" data-note="A0">
-      {/* <span className="hints">W</span> */}
+    <div id={props.datanote} className="key" datanote={props.datanote}>
+      <audio src={"MP3/" + props.datanote + ".mp3"}></audio>
     </div>
   );
 };
