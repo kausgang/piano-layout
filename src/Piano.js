@@ -5,7 +5,13 @@ const Piano = (props) => {
   return (
     <div className="piano">
       <Octave />
-      {/* <Octave /> */}
+      <Octave />
+      <Octave />
+      {/* middle c octave */}
+      <Octave MiddleC="true" />
+      <Octave />
+      <Octave />
+      <Octave />
     </div>
   );
 };

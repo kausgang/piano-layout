@@ -1,11 +1,11 @@
 import React from "react";
 
-const WhiteKey = (props) => {
+const WhiteKeyMiddleC = (props) => {
   return (
     <div data-key="KEYCODE" className="key" data-note="A0">
-      {/* <span className="hints">W</span> */}
+      <span className="hints">C</span>
     </div>
   );
 };
 
-export default WhiteKey;
+export default WhiteKeyMiddleC;

@@ -1,27 +1,44 @@
 import React from "react";
 import WhiteKey from "./WhiteKey";
 import BlackKey from "./BlackKey";
-import FirstWhiteKey from "./FirstWhiteKey";
-// import WhiteWhiteKey from "./WhiteWhiteKey";
+import WhiteKeyMiddleC from "./WhiteKeyMiddleC";
 
-const Octave = () => {
-  return (
-    <div className="octave">
-      <FirstWhiteKey />
-      <BlackKey />
-      <WhiteKey />
-      <BlackKey />
-      <FirstWhiteKey />
-
-      <FirstWhiteKey />
-      <BlackKey />
-      <WhiteKey />
-      <BlackKey />
-      <WhiteKey />
-      <BlackKey />
-      <WhiteKey />
-    </div>
-  );
+const Octave = (props) => {
+  if (props.MiddleC) {
+    return (
+      <div className="octave">
+        <WhiteKeyMiddleC />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+      </div>
+    );
+  } else {
+    return (
+      <div className="octave">
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+        <BlackKey />
+        <WhiteKey />
+      </div>
+    );
+  }
 };
 
 export default Octave;

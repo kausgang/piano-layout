@@ -1,7 +1,7 @@
 .piano {
   display: flex;
   position: relative;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .octave {
@@ -16,6 +16,7 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   /* width: 2%; */
+
   width: 14.28%;
   height: 50vh;
   z-index: 0;
@@ -31,20 +32,8 @@
   background: #000;
   color: #eee;
   z-index: 10;
-  /* margin-left: -0.8%;
-  margin-right: -0.8%; */
-}
-
-.firstwhite {
-  position: relative;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  /* width: 2%; */
-  width: 14.28%;
-  height: 50vh;
-  z-index: 0;
-  /* margin-left: -0.1%; */
-  /* margin-right: -0.1%; */
+  margin-left: -5.71%;
+  margin-right: -5.71%;
 }
 
 .hints {
@@ -53,6 +42,6 @@
   opacity: 0.5;
   position: absolute;
   bottom: 7px;
-  transition: opacity 0.3s ease-out;
+  /* transition: opacity 0.3s ease-out; */
   font-size: 20px;
 }
