@@ -1,13 +1,11 @@
 .piano {
   display: flex;
   position: relative;
-  /* background-color: aqua; */
 }
 
 .octave {
   display: flex;
   position: relative;
-  /* background-color: brown; */
   width: 100%;
 }
 
@@ -15,7 +13,6 @@
   position: relative;
   border: 1px solid black;
   border-radius: 0.5rem;
-  /* width: 2%; */
   background-color: white;
   width: 14.28%;
   height: 50vh;
@@ -26,7 +23,6 @@
 
 .key.sharp {
   position: relative;
-  /* width: 1.6%; */
   width: 11.43%;
   height: 30vh;
   background: #000;
@@ -40,8 +36,7 @@
   position: relative;
   border: 1px solid black;
   border-radius: 0.5rem;
-  /* width: 2%; */
-  background-color: lightgray;
+  background-color: cornsilk;
   width: 14.28%;
   height: 50vh;
   z-index: 0;
@@ -55,6 +50,13 @@
   opacity: 0.5;
   position: absolute;
   bottom: 7px;
-  /* transition: opacity 0.3s ease-out; */
   font-size: 20px;
+}
+
+.key.active {
+  background-color: #ccc;
+}
+
+.key.sharp.active {
+  background-color: #333;
 }
